@@ -1,0 +1,5 @@
+logs**
+temp_models**
+wandb**
+__pycache__
+**/output/**
