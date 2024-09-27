@@ -4,7 +4,7 @@
   <img src="MOD_logo.png" width=512px>
 </p>
 
-This repo provides code for the paper [Decoding-Time Language Model Alignment with Multiple Objectives](https://arxiv.org/pdf/2406.18853). **This repo is still under construction.** If you have any question, please let me know by creating a issue!
+This repo provides code for [NeurIPS2024](https://nips.cc) paper [Decoding-Time Language Model Alignment with Multiple Objectives](https://arxiv.org/pdf/2406.18853). If you have any question, please let me know by creating a issue!
 # 💻 Set Up
 ## PPO
 ```bash
@@ -73,7 +73,7 @@ If you find our work useful, please consider citing:
 @article{Shi2024MOD,
   title={Decoding-Time Language Model Alignment with Multiple Objectives},
   author={Ruizhe Shi and Yifang Chen and Yushi Hu and Alisa Liu and Hannaneh Hajishirzi and Noah A. Smith and Simon S. Du},
-  journal={arXiv}, 
+  journal={The Thirty-eighth Annual Conference on Neural Information Processing Systems}, 
   year={2024}
 }
 ```
