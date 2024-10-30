@@ -42,7 +42,7 @@ cd ./ppo
 CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch morlhf.py --preference 1 --base_model_name {path_to_the_sft_model} --reward_names 'harmless,helpful' --exp_type 'assistant' --wandb_name 'rlhf_harmless'
 CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch morlhf.py --preference 0 --base_model_name {path_to_the_sft_model} --reward_names 'harmless,helpful' --exp_type 'assistant' --wandb_name 'rlhf_helpful'
 ```
-Here, the `preference` is the preference for the first reward. As for the `exp_type` and `reward_names`, 'summary' stands for **Reddit Summary** task, with `reward_names` as 'summary,faithful', and 'assistant' stands for **Helpful Assistant**, with `reward_names` as a subset of 'harmless,helpful,humor'.
+Here, the `preference` is the preference for the first reward. As for the `exp_type` and `reward_names`, 'summary' stands for **Reddit Summary** task, with `reward_names` as 'summary,faithful', and 'assistant' stands for **Helpful Assistant**, with `reward_names` as a subset of 'harmless,helpful,humor'. We provide some checkpoints in [this link](https://drive.google.com/drive/u/0/folders/136Gh6lPo9gaVRyucS1Ee4415puIIqhoY).
 
 ### Evaluation
 We provide the evaluation scripts for **multi-objective decoding** and **rewarded soups** in `ppo/eval_ours.sh` and `ppo/eval_rs.sh`. Visualization script can be referred to [RiC](https://github.com/YangRui2015/RiC).
@@ -53,7 +53,8 @@ We provide one task, namely **Safety Alignment**, for DPO training. The relevant
 We provide the training scripts for DPO in `dpo/run.sh`. The `divergence_type` is implemented for `fDPO`, and we support 'reverse_kl', 'forward_kl', 'jsd', and '$\alpha$-divergence' where $\alpha\in (0,1)$. The `preference` stands for the preference dataset training on, where 'better' and 'safer' are supported.
 ```bash
 bash scripts/dpo/run.sh
-``` 
+```
+We provide some checkpoints in [this link](https://drive.google.com/drive/u/0/folders/136Gh6lPo9gaVRyucS1Ee4415puIIqhoY).
 
 ### Generation
 ```bash
